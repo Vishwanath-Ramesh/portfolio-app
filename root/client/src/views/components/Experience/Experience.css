@@ -1,0 +1,27 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.experience__header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.experiene__company {
+  align-self: flex-end;
+  font-style: italic;
+}

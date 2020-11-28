@@ -1,0 +1,32 @@
+.personal-projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-projects__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.personal-projects__header {
+  display: flex;
+  font-weight: 600;
+}
+
+.personal-projects__name {
+  flex-basis: 10%;
+}
+
+.personal-projects__skills {
+  /* flex-basis: 80%; */
+}
+
+.personal-projects__content {
+  padding-top: 1rem;
+}
+
+.personal-projects__item {
+  /* padding-bottom: 1rem; */
+}

@@ -1,7 +1,15 @@
 const apiEndPoints = {
-  getRoot: {
+  getData: {
     method: 'get',
-    url: '/',
+    url: '/data',
+  },
+  getDownloadCount: {
+    method: 'get',
+    url: '/downloads',
+  },
+  postDownload: {
+    method: 'post',
+    url: '/downloads',
   },
 }
 

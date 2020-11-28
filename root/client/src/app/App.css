@@ -5,28 +5,53 @@ html {
 body {
   font-size: 1em;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
 }
 
 .app {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  border: 1px solid black;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px 2px #888888;
 }
 
 /* --------------------- Media Queries --------------------- */
-
 @media (max-width: 80em) {
-  html {
-    font-size: 0.88em;
+  .app {
+    width: 80%;
   }
 }
 
 @media (max-width: 60em) {
-  html {
-    font-size: 0.77em;
+  .app {
+    width: 100%;
+  }
+
+  #root {
+    margin: 1rem;
   }
 }
 
 @media (max-width: 37.5em) {
-  html {
-    font-size: 0.55em;
+  .app {
+    width: 100%;
+  }
+
+  #root {
+    margin: 1rem;
   }
 }

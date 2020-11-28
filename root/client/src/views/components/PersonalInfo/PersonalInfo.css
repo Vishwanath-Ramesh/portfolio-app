@@ -1,0 +1,32 @@
+.personal-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info__title,
+.experience__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.personal-info__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.personal-info__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.personal-info__label {
+  font-weight: 600;
+}
+
+.personal-info__description {
+  word-wrap: break-word;
+}

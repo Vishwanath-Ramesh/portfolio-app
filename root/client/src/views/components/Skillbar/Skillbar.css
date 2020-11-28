@@ -1,0 +1,25 @@
+.skillbar {
+  display: flex;
+}
+
+.skillbar__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skillbar__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.skillbar__type {
+  font-weight: 600;
+}
+
+.skillbar__level {
+  display: flex;
+  height: 1rem;
+  background-color: #b3aba8;
+}

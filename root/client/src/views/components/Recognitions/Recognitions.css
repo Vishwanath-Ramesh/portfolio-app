@@ -1,0 +1,29 @@
+.recognitions {
+  display: flex;
+  flex-direction: column;
+}
+
+.recognitions__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.recognitions__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
+
+.recognitions__item {
+  display: flex;
+}
+
+.recognitions__year {
+  font-weight: 600;
+  flex-basis: 10%;
+}
+
+.recognitions__name {
+}

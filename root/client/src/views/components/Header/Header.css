@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header__name {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header__role {
+  font-size: 1.2rem;
+}
+
+.header__experience_label {
+  font-weight: 600;
+}

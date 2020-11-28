@@ -1,0 +1,28 @@
+.additional-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-skills__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.additional-skills__content {
+  padding-top: 1rem;
+}
+
+.additional-skills__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.additional-skills__header {
+  font-weight: 600;
+}
+
+.additional-skills__description {
+}

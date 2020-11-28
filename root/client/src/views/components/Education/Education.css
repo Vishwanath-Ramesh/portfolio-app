@@ -1,0 +1,40 @@
+.education {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.education__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.education__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.education__item {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.education__left {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+.education__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.education__study,
+.education__percentage,
+.education__degree {
+  font-weight: 600;
+}

@@ -7,4 +7,6 @@ const mongoClient = new MongoClient(configs.databaseURI, {
   useUnifiedTopology: true,
 })
 
-module.exports = mongoClient
+const connection = mongoClient.connect()
+
+module.exports = { mongoClient, connection }

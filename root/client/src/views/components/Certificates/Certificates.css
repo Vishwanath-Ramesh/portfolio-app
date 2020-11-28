@@ -1,0 +1,39 @@
+.certifications {
+  display: flex;
+  flex-direction: column;
+}
+
+.certifications__title {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+
+.certifications__main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.certifications__item {
+  display: flex;
+  flex: 1 1 40%;
+  padding-bottom: 1rem;
+}
+
+.certifications__year {
+  flex-basis: 20%;
+}
+
+.certifications__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.certifications__name {
+  font-weight: 600;
+}
+
+.certifications__provider {
+}
