@@ -12,7 +12,7 @@ const Actions = () => {
 
   const onDownloadClick = () => {
     async function fetchData() {
-      const response = await getAPIData(
+      await getAPIData(
         apiEndPoints.postDownload.method,
         apiEndPoints.postDownload.url
       )
@@ -33,7 +33,9 @@ const Actions = () => {
       >
         <GetAppIcon />
       </Fab>
-      <a id="download-link" href={downloadURL} />
+      <a id="download-link" href={downloadURL}>
+        {' '}
+      </a>
     </div>
   )
 }

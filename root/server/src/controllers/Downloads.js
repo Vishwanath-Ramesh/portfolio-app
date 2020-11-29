@@ -5,9 +5,9 @@ class DownloadsController {
     const activityData = await mongoClient
       .db('portfolio')
       .collection('activity')
-      .insertOne({ dateAdded: new Date() })
+      .insertOne({ dateDownloaded: new Date() })
 
-    res.json(activityData)
+    res.status(201).json({ id: activityData.insertedId, status: 'success' })
   }
 
   static async getDownloadCount(req, res) {
@@ -17,7 +17,7 @@ class DownloadsController {
       .find()
       .count()
 
-    res.json(activityData)
+    res.json({ noOfDownloads: activityData })
   }
 }
 

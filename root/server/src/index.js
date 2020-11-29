@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 
 const { mongoClient } = require('./service/database')
 const DownloadsRoute = require('./routes/Downloads')
@@ -9,8 +10,6 @@ const port = process.env.PORT || 8080
 
 app.use(express.json())
 app.use(cors({ origin: true }))
-
-mongoClient.connect()
 
 app.get('/api/data', async (req, res) => {
   const portfolioData = await mongoClient
@@ -22,7 +21,8 @@ app.get('/api/data', async (req, res) => {
 })
 
 app.use('/api', DownloadsRoute)
-app.use('*', (req, res) => res.status(404).json({ error: 'not found' }))
+app.use('/', express.static(path.join(__dirname, '../../client/dist')))
+app.use('/*', (req, res) => res.status(404).json({ error: 'Page not found' }))
 
 app.listen(
   port
