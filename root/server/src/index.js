@@ -21,7 +21,7 @@ app.get('/api/data', async (req, res) => {
 })
 
 app.use('/api', DownloadsRoute)
-app.use('/', express.static(path.join(__dirname, '../../client/dist')))
+app.use('/', express.static(path.join(__dirname, '../public')))
 app.use('/*', (req, res) => res.status(404).json({ error: 'Page not found' }))
 
 app.listen(
