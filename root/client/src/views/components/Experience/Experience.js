@@ -23,12 +23,14 @@ const Experience = ({ experience }) => {
                 </div>
                 <div className="experiene__company">{item.company}</div>
                 <div className="experience__summary">{item.summary}</div>
-                <div className="experience__clients">
-                  <span>
-                    <strong>Clients: </strong>
-                  </span>
-                  {item.clients.join(', ')}
-                </div>
+                {item.clients && item.clients.length > 0 && (
+                  <div className="experience__clients">
+                    <span>
+                      <strong>Clients: </strong>
+                    </span>
+                    {item.clients.join(', ')}
+                  </div>
+                )}
               </div>
             )
           })}
