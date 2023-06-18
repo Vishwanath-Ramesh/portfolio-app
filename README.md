@@ -14,6 +14,8 @@ This is a project created for self portfolio
 - Webpack
 - Babel
 - heroku
+- ESlint
+- Jest
 
 ## Installation
 
