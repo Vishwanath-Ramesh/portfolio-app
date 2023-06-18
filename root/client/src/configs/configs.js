@@ -3,7 +3,7 @@ const isProd = String(process.env.NODE_ENV).toLowerCase() === 'production'
 function getServerConfiguration() {
   if (isProd)
     return {
-      baseURL: 'https://vishwanath-portfolio.herokuapp.com/api',
+      baseURL: 'https://vishwanath-portfolio.onrender.com/api',
     }
 
   return {
