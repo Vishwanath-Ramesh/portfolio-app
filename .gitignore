@@ -4,7 +4,6 @@ root/server/dist
 root/server/coverage
 root/server/yarn.lock
 root/server/lib
-root/server/.env
 
 # Client
 root/client/node_modules
