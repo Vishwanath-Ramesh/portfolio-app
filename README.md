@@ -95,5 +95,5 @@ or
 yarn build
 ```
 
-You can also open
-[the deployed app on Heroku](https://vishwanath-portfolio.herokuapp.com/).
+You can also view
+[the deployed app on Render](https://vishwanath-portfolio.onrender.com/).
