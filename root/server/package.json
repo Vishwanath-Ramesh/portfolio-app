@@ -16,8 +16,9 @@
     "test:report": "jest --coverage && serve ./coverage/lcov-report",
     "test:watch": "jest --watchAll",
     "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
-    "setup": "yarn install && yarn validate",
+    "build:client": "yarn --cwd ../client build",
     "build": "webpack",
+    "setup": "yarn build:client && yarn install",
     "start": "node ./src/index.js",
     "dev": "nodemon -r dotenv/config ./src/index.js"
   },
